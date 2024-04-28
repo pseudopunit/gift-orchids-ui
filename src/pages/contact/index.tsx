@@ -1,7 +1,8 @@
+import ContactPage from "@/components/contact/Contact";
 import { Box } from "@mui/material";
 
 const Contact = () => {
-  return <Box>Contact</Box>;
+  return <ContactPage />;
 };
 
 export default Contact;

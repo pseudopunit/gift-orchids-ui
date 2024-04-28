@@ -5,13 +5,17 @@ import styles from "./Card.module.css";
 interface Props {
   text: string;
   icon: ReactNode;
+  textColor?: string;
+  onClick: () => void;
 }
 
-const Card = ({ text, icon }: Props) => {
+const Card = ({ text, icon, textColor, onClick }: Props) => {
   return (
-    <Box className={styles.square}>
+    <Box className={styles.square} onClick={onClick}>
       <Box className={styles.icon}>{icon}</Box>
-      <Typography className={styles.text}>{text}</Typography>
+      <Typography color={textColor} className={styles.text}>
+        {text}
+      </Typography>
     </Box>
   );
 };

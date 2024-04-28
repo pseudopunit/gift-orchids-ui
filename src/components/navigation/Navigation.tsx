@@ -17,7 +17,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import styles from "@/components/navigation/Navigation.module.css";
 import Link from "next/link";
-import { ContactPageOutlined, CorporateFareOutlined, HomeOutlined } from "@mui/icons-material";
+import { ContactPageOutlined, CorporateFareOutlined, EmojiNature, HomeOutlined } from "@mui/icons-material";
 
 const drawerWidth = 240;
 
@@ -34,6 +34,7 @@ const Main = styled("div")(({ theme }) => ({
 const menuItems = [
   { name: "Home", path: "/", icon: <HomeOutlined /> },
   { name: "Corporate", path: "/corporate", icon: <CorporateFareOutlined /> },
+  { name: "Seasonal", path: "/seasonal", icon: <EmojiNature /> },
   { name: "Contact", path: "/contact", icon: <ContactPageOutlined /> },
 ];
 
