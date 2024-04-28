@@ -1,9 +1,12 @@
 "use client";
 
-import { Typography } from "@mui/material";
+import HomePage from "@/components/home/HomePage";
+import { Box } from "@mui/material";
 
 export default function Home() {
   return (
-    <Typography color={"#50727B"}>Hello gift-orchids</Typography>
+    <Box>
+      <HomePage />
+    </Box>
   );
 }
