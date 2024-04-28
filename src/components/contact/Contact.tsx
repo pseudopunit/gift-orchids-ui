@@ -12,7 +12,13 @@ const ContactPage: React.FC = () => {
 
   return (
     <Container maxWidth="md">
-      <Typography variant="h4" component="h1" align="center" gutterBottom>
+      <Typography
+        variant="h4"
+        component="h1"
+        align="center"
+        gutterBottom
+        sx={{ color: "#78A083" }}
+      >
         Contact Us
       </Typography>
       <form onSubmit={handleSubmit}>

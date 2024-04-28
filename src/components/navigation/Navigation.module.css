@@ -4,6 +4,7 @@
 
 .headerText {
   color: #50727B;
+  cursor: pointer;
 }
 
 .menuItemContainer{

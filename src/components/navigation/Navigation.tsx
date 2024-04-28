@@ -17,7 +17,13 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import styles from "@/components/navigation/Navigation.module.css";
 import Link from "next/link";
-import { ContactPageOutlined, CorporateFareOutlined, EmojiNature, HomeOutlined } from "@mui/icons-material";
+import {
+  ContactPageOutlined,
+  CorporateFareOutlined,
+  EmojiNature,
+  HomeOutlined,
+} from "@mui/icons-material";
+import { useRouter } from "next/router";
 
 const drawerWidth = 240;
 
@@ -69,6 +75,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 
 const Navigation = ({ children }: any) => {
   const theme = useTheme();
+  const router = useRouter();
   const [open, setOpen] = React.useState(false);
 
   const handleDrawerOpen = () => {
@@ -99,6 +106,10 @@ const Navigation = ({ children }: any) => {
             noWrap
             component="div"
             className={styles.headerText}
+            onClick={() => {
+              router.push("/");
+              setOpen(false);
+            }}
           >
             Gift Orchids
           </Typography>
@@ -130,7 +141,11 @@ const Navigation = ({ children }: any) => {
         <List>
           {menuItems.map((menuItem, index) => (
             <ListItem key={menuItem.name} disablePadding>
-              <Link href={menuItem.path} onClick={() => setOpen(false)} className={styles.hyperlink}>
+              <Link
+                href={menuItem.path}
+                onClick={() => setOpen(false)}
+                className={styles.hyperlink}
+              >
                 <ListItemButton className={styles.menuItemContainer}>
                   {menuItem.icon}
                   <ListItemText primary={menuItem.name} />
