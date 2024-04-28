@@ -1,0 +1,18 @@
+.appBar {
+  background-color: white;
+}
+
+.headerText {
+  color: #50727B;
+}
+
+.menuItemContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.hyperlink {
+  text-decoration: none;
+  color: #50727B;
+}
