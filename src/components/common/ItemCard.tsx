@@ -5,11 +5,12 @@ import styles from "@/components/common/ItemCard.module.css";
 
 interface Props {
   product: Product;
+  onClick: () => void;
 }
 
-const ItemCard = ({ product }: Props) => {
+const ItemCard = ({ product, onClick }: Props) => {
   return (
-    <Box className={styles.container}>
+    <Box className={styles.container} onClick={onClick}>
       <Box className={styles.image}>
         <Image
           src={product.image}

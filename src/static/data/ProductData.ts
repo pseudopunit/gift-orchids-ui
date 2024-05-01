@@ -9,6 +9,7 @@ import Img7 from "@/static/images/IMG-20240428-WA00021.jpg";
 
 export const ProductData: Product[] = [
   {
+    pid: 1111,
     productName: "Stainless steel flask",
     productDescription: "Vacuum insulated stainless steel flask",
     category: "",
@@ -18,6 +19,7 @@ export const ProductData: Product[] = [
     availableQuantity: 0,
   },
   {
+    pid: 1112,
     productName: "Vacuum sealer",
     productDescription: "Handheld mini vacum sealer",
     category: "",
@@ -27,6 +29,7 @@ export const ProductData: Product[] = [
     availableQuantity: 0,
   },
   {
+    pid: 1113,
     productName: "Handheld blender",
     productDescription: "Blend with ease",
     category: "",
@@ -36,6 +39,7 @@ export const ProductData: Product[] = [
     availableQuantity: 0,
   },
   {
+    pid: 1114,
     productName: "Harmony glow",
     productDescription: "Sound, light & time in perfect sync",
     category: "",
@@ -45,6 +49,7 @@ export const ProductData: Product[] = [
     availableQuantity: 0,
   },
   {
+    pid: 1115,
     productName: "Mini air cooler",
     productDescription:
       "Chill breeze 3-in-1, cool air, gentle mist & soft light",
@@ -55,6 +60,7 @@ export const ProductData: Product[] = [
     availableQuantity: 0,
   },
   {
+    pid: 1116,
     productName: "GBI-4381",
     productDescription: "Notebook, pen, keychain, char holder",
     category: "",
@@ -64,6 +70,7 @@ export const ProductData: Product[] = [
     availableQuantity: 0,
   },
   {
+    pid: 1117,
     productName: "GBI-4388",
     productDescription: "India bottle set",
     category: "",

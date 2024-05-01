@@ -2,12 +2,23 @@
   background-color: white;
 }
 
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuAndTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .headerText {
-  color: #50727B;
+  color: #50727b;
   cursor: pointer;
 }
 
-.menuItemContainer{
+.menuItemContainer {
   display: flex;
   flex-direction: row;
   gap: 16px;
@@ -15,5 +26,5 @@
 
 .hyperlink {
   text-decoration: none;
-  color: #50727B;
+  color: #50727b;
 }

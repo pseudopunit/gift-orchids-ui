@@ -1,6 +1,7 @@
 import { StaticImageData } from "next/image";
 
 export type Product = {
+  pid: number;
   productName: string;
   productDescription: string;
   category: string;

@@ -24,6 +24,7 @@ import {
   HomeOutlined,
 } from "@mui/icons-material";
 import { useRouter } from "next/router";
+import UserMenu from "./UserMenu";
 
 const drawerWidth = 240;
 
@@ -90,29 +91,32 @@ const Navigation = ({ children }: any) => {
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar position="fixed" open={open} className={styles.appBar}>
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            className={styles.headerText}
-            sx={{ mr: 2, ...(open && { display: "none" }) }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            className={styles.headerText}
-            onClick={() => {
-              router.push("/");
-              setOpen(false);
-            }}
-          >
-            Gift Orchids
-          </Typography>
+        <Toolbar className={styles.toolbar}>
+          <Box className={styles.menuAndTitle}>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              onClick={handleDrawerOpen}
+              edge="start"
+              className={styles.headerText}
+              sx={{ mr: 2, ...(open && { display: "none" }) }}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Typography
+              variant="h6"
+              noWrap
+              component="div"
+              className={styles.headerText}
+              onClick={() => {
+                router.push("/");
+                setOpen(false);
+              }}
+            >
+              Gift Orchids
+            </Typography>
+          </Box>
+          <UserMenu />
         </Toolbar>
       </AppBar>
       <Drawer
