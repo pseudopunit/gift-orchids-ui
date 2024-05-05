@@ -22,9 +22,15 @@ export const useGetCart = () => {
 
   const removeFromCart = (product: Product) => {
     setCart((cart) => {
-      const existingProduct = cart.find((c) => c.product.pid === product.pid);
-      if (existingProduct) {
+      const existingProductIndex = cart.findIndex(
+        (c) => c.product.pid === product.pid
+      );
+      if (existingProductIndex !== -1) {
+        const existingProduct = cart[existingProductIndex];
         existingProduct.count -= 1;
+        if (existingProduct.count === 0) {
+          cart.splice(existingProductIndex, 1);
+        }
       }
     });
   };

@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  height: 30vw;
+  cursor: pointer;
+}
+
+.image {
+  position: relative;
+  width: 30vw;
+  height: 30vw;
+}
+
+.textAndButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 12px;
+  text-overflow: ellipsis;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.addRemoveButtonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #78a083;
+  border-radius: 16px;
+  width: 40vw;
+}
+
+.addRemoveButton {
+  font-weight: 900;
+  color: #78a083;
+}
+
+.countText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #78a083;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+}
