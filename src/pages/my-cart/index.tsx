@@ -1,6 +1,6 @@
 import { useGetCart } from "@/hooks/useGetCart";
-import { Box, Button, Typography } from "@mui/material";
-import CartItemCard from "@/pages/my-cart/CartItemCard";
+import { Box, Button } from "@mui/material";
+import CartItemCard from "@/components/cart/CartItemCard";
 import EmptyCart from "/public/emptyCart.svg";
 import Image from "next/image";
 
