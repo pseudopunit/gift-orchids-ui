@@ -25,6 +25,7 @@ const MyCart = () => {
       <Box sx={{ display: "flex", flexDirection: "column", gap: "4px" }}>
         {cart.map((cart) => (
           <CartItemCard
+            key={cart.product.pid}
             cart={cart}
             onAdd={() => addToCart(cart.product)}
             onRemove={() => removeFromCart(cart.product)}
