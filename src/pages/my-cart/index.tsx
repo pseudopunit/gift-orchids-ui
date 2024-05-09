@@ -3,8 +3,10 @@ import { Box, Button } from "@mui/material";
 import CartItemCard from "@/components/cart/CartItemCard";
 import EmptyCart from "/public/emptyCart.svg";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const MyCart = () => {
+  const router = useRouter();
   const { cart, addToCart, removeFromCart } = useGetCart();
 
   if (cart.length === 0) {
@@ -39,6 +41,7 @@ const MyCart = () => {
           backgroundColor: "#50727B",
           ":hover": { backgroundColor: "#78A083" },
         }}
+        onClick={() => router.push("/buy")}
       >
         Buy
       </Button>

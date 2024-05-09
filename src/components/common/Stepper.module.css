@@ -1,0 +1,80 @@
+/* .stepper {
+  margin-bottom: 24px;
+}
+
+.iconContainer {
+  font-size: 32px;
+}
+
+.completedStepIcon {
+  font-size: 32px;
+  color: #008d75;
+}
+
+.activeStepIcon {
+  width: 32px;
+  height: 32px;
+  background-color: #b3ddd6;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: 0.5px;
+  color: #191f1c;
+  font-family: "Archivo";
+}
+
+.inactiveStepIcon {
+  width: 32px;
+  height: 32px;
+  background: #f9f9f9;
+  border: 1px solid #c8c8c8;
+  border-radius: 100px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: 0.5px;
+  color: #4f4f4f;
+  font-family: "Archivo";
+}
+
+.completedStepIcon {
+  font-size: 32px;
+  color: #008d75;
+}
+
+.completedStepLabel {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+}
+
+.activeLineConnector {
+  border-top-color: #008d75;
+  border-top-style: solid;
+  border-top-width: 2px;
+}
+
+.completedLineConnector {
+  border-top-color: #008d75;
+  border-top-style: solid;
+  border-top-width: 2px;
+}
+
+.disabledLineConnector {
+  border-top-color: #c8c8c8;
+  border-top-style: dashed;
+  border-top-width: 1px;
+}
+
+.lineConnector {
+  border: none;
+}
+
+.pointerEvent {
+  cursor: pointer;
+}
+
+.disablePointer {
+  pointer-events: none;
+} */
