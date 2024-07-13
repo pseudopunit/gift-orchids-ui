@@ -19,7 +19,7 @@ jobs:
         
   deploy:
     needs: build
-    runs-on: [ip-172-31-3-77]
+    runs-on: [self-hosted, ip-172-31-3-77]
     steps:
       - name: Pull image from docker hub
         run: docker pull shivam431/gift-orchids-ui:latest
